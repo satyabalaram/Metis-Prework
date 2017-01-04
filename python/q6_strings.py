@@ -18,8 +18,15 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return 'Number of donuts: {}'.format(count)
+    else:
+        return 'Number of donuts: many'
 
+print(donuts(4))
+print(donuts(9))
+print(donuts(10))
+print(donuts(99))
 
 def both_ends(s):
     """
@@ -37,8 +44,15 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) >= 2:
+        return s[0:2] + s[-2:]
+    else:
+        return ''
 
+print(both_ends('spring'))
+print(both_ends('Hello'))
+print(both_ends('a'))
+print(both_ends('xyz'))
 
 def fix_start(s):
     """
@@ -56,8 +70,11 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
-
+    return s[0] + s[1:].replace(s[0],'*')
+print(fix_start('babble'))
+print(fix_start('aardvark'))
+print(fix_start('google'))
+print(fix_start('donut'))
 
 def mix_up(a, b):
     """
@@ -74,7 +91,12 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
+
+print(mix_up('mix', 'pod'))
+print(mix_up('dog', 'dinner'))
+print(mix_up('gnash', 'sport'))
+print(mix_up('pezzy', 'firm'))
 
 
 def verbing(s):
@@ -91,8 +113,17 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3:
+        if s[-3:] == 'ing':
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else:
+        return s
 
+print(verbing('hail'))
+print(verbing('swiming'))
+print(verbing('do'))
 
 def not_bad(s):
     """
@@ -111,8 +142,20 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    import re
+    split_s = re.findall(r"[\w']+|[.,!?;]", s)
+    if ('bad' in split_s) and ('not' in split_s):
+        if split_s.index('bad') > split_s.index('not'):
+            return re.sub('not.*?bad','good',s, flags=re.DOTALL)
+        else:
+            return s
+    else:
+        return s
 
+print(not_bad('This movie is not so bad'))
+print(not_bad('This dinner is not that bad!'))
+print(not_bad('This tea is not hot'))
+print(not_bad("It's bad yet not"))
 
 def front_back(a, b):
     """
@@ -130,4 +173,10 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_front, a_back = a[:int(len(a)/2 + 0.5)], a[int(len(a)/2 + 0.5):]
+    b_front, b_back = b[:int(len(b)/2 + 0.5)], b[int(len(b)/2 + 0.5):]
+    return a_front + b_front + a_back + b_back
+
+print(front_back('abcd', 'xy'))
+print(front_back('abcde', 'xyz'))
+print(front_back('Kitten', 'Donut'))
