@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I decided to use nano in the short run for its simplicity & ease to learn. However, I plan to learn Emacs for its versatility & customizability.
 
 --
 
@@ -68,6 +68,4 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
+>> I have already used Sublime, Spyder, & Atom and thus, will continue to use them until I become adept at Emacs. Useful shortcuts include ```CMD + D``` to find instances matching selection one-by-one or ```CMD + CONTROL + G``` for finding all instances matching selection. The editor can be customized by going to preferences and navigating to Settings or Key Bindings.
