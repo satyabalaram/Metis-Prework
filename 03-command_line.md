@@ -14,9 +14,9 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 `cd ..` - move up one directory  
 `mkdir` - make directory  
 `touch [filename]` - create file in working directory  
-`cp [source] [destination]` - copy files to destination
+`cp [source] [destination]` - copy files to destination  
 `cp * [destination]` - copy all files to destination  
-`mv [source] [destination]` - move files to destination
+`mv [source] [destination]` - move files to destination  
 `mv [filename] [new filename]` - changes name of filename  
 `rm [source]` - remove file  
 `rm -r [source]` - remove directory & all child directories  
