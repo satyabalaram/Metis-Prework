@@ -50,7 +50,7 @@ thinkplot.Config(xlabel='Num Children',ylabel='Probability')
 thinkplot.Show()
 ```
 
-![png](output_5_0.png)
+![png](3.1-Fig1.png)
 
 The plot above illustrates that the most common number of children under 18 in the household is 0. Now, the biased distribution will be constructed such that each children in the sample will answer the number of children in their household.
 
@@ -86,7 +86,7 @@ thinkplot.Pmfs([pmf,pmf_bias])
 thinkplot.Config(xlabel='Num Children',ylabel='Probability')
 thinkplot.Show()
 ```
-![png](output_9_0.png)
+![png](3.1-Fig2.png)
 
 ```python
 # Compute the Mean of the Two Distributions
@@ -96,5 +96,5 @@ print('Biased Distribution Mean:',pmf_bias.Mean())
 
     Actual Distribution Mean: 1.02420515504
     Biased Distribution Mean: 2.40367910066
-    
+
 As illustrated by the two plots, the biased distribution reported a larger probability for households with more children in comparison to the actual distribution. The mean of the two distributions also reflect the same trend as the actual distribution has a mean of 1.02 children and the biased distribution has a mean of 2.40 children. This is because, families with more children inflate the count of number of children & families with no children have no chance to be in the sample.
