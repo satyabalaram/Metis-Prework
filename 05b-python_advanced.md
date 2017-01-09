@@ -140,8 +140,10 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 Print the first 3 key and value pairs of the dictionary:
 
 >> **Solution**  
+```
 Ellenberg [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']]  
 Li [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]
+```
 
 ```python
 for key, value in faculty_dict.items():
@@ -157,9 +159,11 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 Print the first 3 key and value pairs of the dictionary:
 
 >> **Solution**  
+```
 ('Hongzhe', 'Li') ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']  
 ('Jonas', 'Ellenberg') ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']  
 ('Mingyao', 'Li') ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu']
+```
 
 ```python
 # Output the Key-Value Pairs Based on First Name of Professors
@@ -173,9 +177,11 @@ for key in sorted(professor_dict):
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
 >> **Solution**  
+```
 ('Susan', 'Ellenberg') ['Ph.D.', 'Professor', 'sellenbe@upenn.edu']  
 ('Jonas', 'Ellenberg') ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']  
 ('Hongzhe', 'Li') ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']
+```
 
 ```python
 # Output the Key-Value Pairs Based on Last Name of Professors
