@@ -91,7 +91,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >> Let T: Event that Elvis had a twin brother  
 F: Event that Elvis had a fraternal twin  
 I: Event that Elvis had an identical twin  
-Using Bayes Rule & Law of Total Probability:
+Using Bayes Rule & Law of Total Probability:  
 P( I | T ) = P( I , T ) / P( T ) = [P( T | I ) x P( I )] / [ P( T | I ) x P( I ) + P( T | F ) x P( F )   
 P( I | T ) ] = (1/300) / [(1/300) + (1/125) ] = 5/17 or 0.2941
 
