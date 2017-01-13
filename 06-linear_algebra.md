@@ -17,8 +17,8 @@ You should be familiar with the following concepts:
 
 There are matrix operations exercises in the [Matrix Algebra Worksheet](math/matrix_algebra_worksheet.pdf).  Print out the worksheet and complete the computations by hand.  You can check your work in Python.
 
+>> See Python Code or iPython Notebook for Solution
+
 ---
 
 Place your Python code (with results in comment) in this file: [matrix_algebra.py](math/matrix_algebra.py)
-
-
