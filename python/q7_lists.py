@@ -100,7 +100,19 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    return sorted(list1+list2)
+    # return sorted(list1+list2)
+    list_merge = []
+    while (len(list1) > 0) and (len(list2) > 0):
+        if list1[0] < list2[0]:
+            list_merge.append(list1.pop(0))
+        else:
+            list_merge.append(list2.pop(0))
+    if len(list1) == 0:
+        list_merge += list2
+    if len(list2) == 0:
+        list_merge += list1
+    return list_merge
+
 print(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']))
 print(linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz']))
 print(linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb']))
